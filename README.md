@@ -25,39 +25,8 @@
 ![Wireframe](assets/ERD.jpeg)
 
 --
-# Travel1
-![Wireframe](assets/travel1.jpeg)
-
---
-# Travel2
-![Wireframe](assets/travel2.jpeg)
-
---
-# Travel3
-![Wireframe](assets/travel3.jpeg)
-
-# Travel4
-![Wireframe](assets/travel4.jpeg)
-
---
-# Travel5
-![Wireframe](assets/travel5.jpeg)
-
---
-# Travel6
-![Wireframe](assets/travel6.jpeg)
-
-# Travel7
-![Wireframe](assets/travel7.jpeg)
-
---
-# Travel8
-![Wireframe](assets/travel8.jpeg)
-
---
-# Travel9
-![Wireframe](assets/travel9.jpeg)
-
+# image 
+<img src="https://docs.google.com/presentation/d/1rvcr-buYfBZFSCqZEOmnaqw9-EmvTFUklsb2EMRC8g8/edit#slide=id.p" alt="image">
 
 
 ---
