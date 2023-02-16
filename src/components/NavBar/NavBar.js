@@ -11,7 +11,7 @@ export default function NavBar({ user, setUser }) {
 
     return(
         <nav>
-            <Link to="/Locations">Locations</Link>
+            <Link to="/locations">Locations</Link>
             &nbsp; | &nbsp;
            <span>Welcome, {user.name}</span>
            &nbsp; | &nbsp;
