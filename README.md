@@ -5,6 +5,26 @@
 ![Wireframe](assets/login.jpeg)
 
 --
+
+# Signin Signup Page
+![Wireframe](assets/SigninSignup.jpeg)
+
+--
+
+# HomePage
+![Wireframe](assets/HomePage.jpeg)
+
+--
+
+# Country Info Page
+![Wireframe](assets/CountryInfo.jpeg)
+
+--
+
+# ERD
+![Wireframe](assets/ERD.jpeg)
+
+--
 # Travel1
 ![Wireframe](assets/travel1.jpeg)
 
