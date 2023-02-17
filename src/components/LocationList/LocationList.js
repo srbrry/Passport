@@ -13,21 +13,25 @@ export default function LocationList(){
         getLocations()
     }, [])
 
+    const locationItem = locations.map((location, index) => <LocationListCard location={location} index={index} key={index} />)
 
     return(
         <>
            <h3>Hello this is the list</h3>
-            {
-                locations.map((location, index) => {
-                    return(
-                        <>
-                            <LocationListCard location={location} index={index} />
-                        </>
-                    )
-                   
-                })
-            }
+           {locationItem}
         </>
      
     )
 }
+
+
+// {
+//     locations.map((location, index) => {
+//         return(
+//             <>
+//                 <LocationListCard location={location} index={index} />
+//             </>
+//         )
+       
+//     })
+// }

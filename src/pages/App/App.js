@@ -1,6 +1,7 @@
 import { useState } from "react"
 import { Routes, Route, Navigate } from "react-router-dom"
 import Locations from "../Locations/Locations";
+import LocationDetailPage from "../LocationDetailPage/LocationDetailPage";
 import AuthPage from "../AuthPage/AuthPage"
 import NavBar from "../../components/NavBar/NavBar";
 import './App.css';
@@ -21,6 +22,7 @@ export default function App() {
           <NavBar user={user} setUser={setUser} />
           <Routes >
             <Route path="/locations" element={<Locations />} />
+            <Route path=":location" element={<LocationDetailPage />} />
             <Route path="/*" element={<Navigate to="/locations" />} />
           </Routes> 
         </> 
