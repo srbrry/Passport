@@ -31,10 +31,11 @@ app.use(favicon(path.join(__dirname, "build", "favicon.ico")))
     //telling express app to use this directory for the static assets
 app.use(express.static(path.join(__dirname, "build")))
 
-
+app.use(require("./config/checkToken"))
 
 //-------API Routes here, before the catch all--------------
 app.use("/api/users", require("./routes/api/users"))
+app.use("/api/locations", require("./routes/api/locations"))
 
 
 

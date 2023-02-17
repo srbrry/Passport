@@ -17,6 +17,7 @@ export function getToken() {
     //check if the token has expired
     //if it hasnt return the token
     const token = localStorage.getItem("token")
+    console.log(token)
     if (!token) return null
     //JWT token broken into 3 parts at '.'
         //1- is the header
@@ -63,3 +64,5 @@ export async function logIn(credentials) {
     localStorage.setItem("token", token)
     return getUser()
 }
+
+
