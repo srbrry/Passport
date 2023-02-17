@@ -24,7 +24,7 @@ export async function signUp(userData) {
 	// 	// if error throw new error
 	// 	throw new Error('Invalid Sign up')
 	// }
-    console.log(userData)
+    
     return sendRequest(BASE_URL, "POST", userData)
 }
 

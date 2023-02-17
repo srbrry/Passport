@@ -36,7 +36,7 @@ export default class SignUpForm extends Component {
         //wait for a response back from the server
         const user = await signUp(formData)
         //logs the all user info
-        console.log(user)
+        //console.log(user)
         //get user when signed up
         this.props.setUser(user)
 

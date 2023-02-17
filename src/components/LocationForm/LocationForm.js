@@ -3,6 +3,7 @@ import * as locationsAPI from "../../utilities/location-api"
 
 export default function LocationForm() {
 
+
     const [location, setLocation] = useState({
         location: "",
         dateFrom: "",
@@ -16,10 +17,10 @@ export default function LocationForm() {
 
     function handleSubmit(event) {
         event.preventDefault()
+        console.log("from submit" + location)
         locationsAPI.addLocation(location)
+        
     }
-
-
 
     return(
         <>

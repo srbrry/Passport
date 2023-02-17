@@ -8,7 +8,8 @@ const locationSchema = new Schema({
      required: true
     },
     dateFrom: {
-        type: String
+        type: String,
+        required: true
     },
     dateTo: {
         type: String
