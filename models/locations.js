@@ -7,7 +7,11 @@ const locationSchema = new Schema({
      type: String,
      required: true
     },
-    dateVisited: {
+    dateFrom: {
+        type: String,
+        required: true
+    },
+    dateTo: {
         type: String
     },
     note: {
