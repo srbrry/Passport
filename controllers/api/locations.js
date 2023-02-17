@@ -8,7 +8,7 @@ async function index(req, res) {
 async function create(req, res) {
     try{
         console.log(req.user)
-        //req.body.user = req.user._id
+        req.body.user = req.user._id
         const location = await Location.create(req.body)
         res.json(location)
     } catch (error) {
