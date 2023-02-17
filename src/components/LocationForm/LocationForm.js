@@ -12,12 +12,12 @@ export default function LocationForm() {
 
     function handleChange(event) {
         setLocation({...location, [event.target.name]: event.target.value})
-        console.log(location)
+        // console.log(location)
     }
 
     function handleSubmit(event) {
         event.preventDefault()
-        console.log("from submit" + location)
+        // console.log(`location is: ${location}`)
         locationsAPI.addLocation(location)
         
     }
