@@ -2,6 +2,7 @@ import { useLocation } from "react-router-dom"
 import { useEffect, useState } from "react"
 import UpdateLocationForm from "../../components/UpdateLocationForm/UpdateLocationForm"
 import * as locationsAPI from "../../utilities/location-api"
+import NoteForm from "../../components/NoteForm/NoteForm"
 
 export default function LocationDetailPage() {
 
@@ -41,7 +42,10 @@ export default function LocationDetailPage() {
         <p>{data.location.location}</p>
         <p>{data.location.dateFrom}</p>
         <p>{data.location.dateTo}</p>
-        <p>{data.location.user}</p>
+        <p>User Id: {data.location.user}</p>
+        <p>Location Id: {data.location._id}</p>
+        {/* <p>Notes: {data.location.note}</p> */}
+        <NoteForm />
         </>
     )
 }

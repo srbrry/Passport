@@ -9,9 +9,14 @@ const noteSchema = new Schema({
     content: {
         type: String,
         required: true
-    } 
-}, {
-    timestamps: true
-})
+    },
+    owner: {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: 'User'
+    },
+    }, 
+    {
+        timestamps: true
+    })
 
 module.exports = noteSchema

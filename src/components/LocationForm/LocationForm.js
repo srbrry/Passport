@@ -7,7 +7,7 @@ export default function LocationForm() {
     const [location, setLocation] = useState({
         location: "",
         dateFrom: "",
-        dateTo: "",
+        dateTo: ""
     })
 
     function handleChange(event) {
@@ -40,7 +40,7 @@ export default function LocationForm() {
                 <input 
                     name = "dateTo"
                     type = "date"  
-                    onChange = {handleChange} />
+                    onChange = {handleChange} />     
                 <button type="submit">Add My Destination</button>
             </form>
         </div>
