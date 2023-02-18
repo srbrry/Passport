@@ -4,7 +4,6 @@ const User = require("../../models/user")
 const jwt = require("jsonwebtoken")
 const bcrypt = require("bcrypt")
 
-
 function createJWT(user) {
     return jwt.sign(
         { user },
@@ -12,7 +11,6 @@ function createJWT(user) {
         { expiresIn: "24h" }
     )
 }
-
 
 async function create(req, res) {
     try {

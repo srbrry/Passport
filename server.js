@@ -36,7 +36,7 @@ app.use(require("./config/checkToken"))
 //-------API Routes here, before the catch all--------------
 app.use("/api/users", require("./routes/api/users"))
 app.use("/api/locations", require("./routes/api/locations"))
-
+app.use("/api/notes", require("./routes/api/notes"))
 
 
     // The following "catch all" route (note the *) is necessary
