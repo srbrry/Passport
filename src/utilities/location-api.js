@@ -7,6 +7,11 @@ export function getLocation() {
     return sendRequest(BASE_URL)
 }
 
+    //SHOW location
+export function showLocation(locationId){
+    return sendRequest(`${BASE_URL}/${locationId}`)
+}
+
     //POST location
 export function addLocation(location) {
     return sendRequest(BASE_URL, "POST", location)

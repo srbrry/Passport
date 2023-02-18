@@ -5,8 +5,19 @@ async function index(req, res) {
     res.json(locations)
 }
 
+async function show(req, res) {
+    try {
+        const location = await Location.findById(req.params.id)
+        res.json(location)
+    } catch (error) {
+        console.log(error)
+        res.status(400).json(error)
+    }
+}
+
 async function create(req, res) {
     try{
+        console.log(req)
         console.log(req.user)
         req.body.user = req.user._id
         const location = await Location.create(req.body)
@@ -46,6 +57,7 @@ async function deleteLocation(req, res) {
 
 module.exports = {
     index,
+    show,
     create,
     updateLocation,
     deleteLocation
