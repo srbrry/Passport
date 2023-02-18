@@ -9,5 +9,10 @@ router.get("/", locationsCTRL.index)
 //POST /api/locations
 router.post("/", locationsCTRL.create)
 
+//PATCH /api/locations/:id
+router.patch("/:id",locationsCTRL.updateLocation)
+
+//DELETE /api/locations/:id
+router.delete("/:id", locationsCTRL.deleteLocation)
 
 module.exports = router
