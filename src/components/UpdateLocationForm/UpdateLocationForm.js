@@ -14,7 +14,7 @@ export default function UpdateLocationForm({ data }) {
   
     function handleChange(event) {
         setLocation({...location, [event.target.name]: event.target.value})
-        console.log(location)
+        // console.log(location)
     }
 
     function handleSubmit(event) {

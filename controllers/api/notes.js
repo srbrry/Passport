@@ -8,14 +8,8 @@ async function showNote(req, res) {
 
 async function createNote(req, res) {
     try {
-        console.log(req.body)
-        console.log(req.body.locationId)
         const location = await Location.findById(req.body.locationId)
-        console.log(location)
-        console.log(location.note)
-        console.log("controllers blah blah")
         const note = await location.note.push(req.body)
-        console.log(location.note)
         await location.save()
         res.json(note)
     } catch (error) {
@@ -31,12 +25,13 @@ async function indexNote(req, res) {
 
 async function updateNote(req, res) {
     try{
-        console.log(req.body)
-        const note = await Note.findById(req.params.id)
-        note.update(req.body)
-        console.log(note)
-
-        note.save()
+        const noteId = req.params.noteId
+        const locationId = req.body.locationId
+        const noteInput = req.body
+        const location = await Location.findById(locationId)
+        const note = await location.note.id(noteId)
+        note.set(noteInput)
+        await location.save()
         res.json(note)
     } catch(error) {
         console.log(error)
@@ -45,6 +40,18 @@ async function updateNote(req, res) {
 }
 
 async function deleteNote(req, res) {
+    try{
+        const noteId = req.params.noteId
+        const locationId = req.body.locationId
+        const location = await Location.findById(locationId)
+        location.note.id(noteId).remove()
+        await location.save()
+    }
+    catch(error){
+        console.log(error)
+        res.status(400).json(error)
+    }
+    
 }
 
 

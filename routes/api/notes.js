@@ -4,18 +4,18 @@ const notesCTRL = require("../../controllers/api/notes")
 
 
 //GET /api/notes
-router.get("/notes/:noteId", notesCTRL.showNote)
+router.get("/:noteId", notesCTRL.showNote)
 
 //POST /api/notes
 router.post("/", notesCTRL.createNote)
 
 // INDEX /api/notes
-router.get("/notes", notesCTRL.indexNote)
+router.get("/", notesCTRL.indexNote)
 
 // UPDATE /api/notes
-router.patch("/notes/:noteId", notesCTRL.updateNote)
+router.patch("/:noteId", notesCTRL.updateNote)
 
 // DELETE /api/notes
-router.delete("/notes/:noteId", notesCTRL.deleteNote)
+router.delete("/:noteId", notesCTRL.deleteNote)
 
 module.exports = router
