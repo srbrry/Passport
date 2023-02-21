@@ -27,7 +27,6 @@ export default function UpdateNoteForm({ notes, data }) {
 
     function handleDelete() {
         notesAPI.deleteNote(note, noteId)
-        alert('deleted note')
     }
 
 
