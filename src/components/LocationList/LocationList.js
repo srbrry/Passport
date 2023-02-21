@@ -17,7 +17,7 @@ export default function LocationList(){
 
     return(
         <>
-           <h3>Hello this is the list</h3>
+           <h3>My past trips:</h3>
            {locationItem}
         </>
      

@@ -1,7 +1,7 @@
 import { useState } from "react"
 import { useLocation } from "react-router-dom"
 import * as noteAPI from "../../utilities/note-api"
-
+import './NoteForm.css'
 
 export default function NoteForm() {
 
@@ -28,19 +28,21 @@ export default function NoteForm() {
 
     return(
         <>
-        <div className="form-container">
-            <form onSubmit={handleSubmit}>
+        <div className="add-note-form-container">
+            <form onSubmit={handleSubmit} id="add-note-form">
                 <label>Note Title:</label>
                 <input 
                     name = "title"
                     type = "text"  
+                    input = "add-note-input"
                     onChange = {handleChange} />
                 <label>Note Content:</label>
                 <input 
                     name = "content"
                     type = "text"
+                    input = "add-note-input"
                     onChange = {handleChange} />     
-                <button type="submit">Add Note</button>
+                <button type="submit" id="add-note-button">Add Note</button>
             </form>
         </div>
         </>

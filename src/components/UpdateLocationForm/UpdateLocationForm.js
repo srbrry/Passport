@@ -1,6 +1,6 @@
 import { useState } from "react"
 import * as locationsAPI from "../../utilities/location-api"
-
+import './UpdateLocationForm.css'
 
 export default function UpdateLocationForm({ data }) {
         //assign value of location _id
@@ -30,27 +30,30 @@ export default function UpdateLocationForm({ data }) {
 
 
     return (
-        <div className="form-container">
-            <form onSubmit={handleSubmit}>
+        <div className="update-location-form-container">
+            <form onSubmit={handleSubmit} id="update-location-form">
                 <label>Location</label>
                 <input  
                     name = "location"
                     type = "text"
+                    id = "update-location-input"
                     value = {location.location}
                     onChange = {handleChange} />
                 <label>From:</label>
                 <input  
                     name = "dateFrom"
                     type = "date"
+                    id = "update-location-input"
                     value = {location.dateFrom}
                     onChange={handleChange} />
                 <label>To:</label>
                 <input 
                     name = "dateTo"
                     type = "date"
+                    id = "update-location-input"
                     value = {location.dateTo}
                     onChange={handleChange} />
-                <button type="submit">Update Destination</button>
+                <button type="submit" id="update-location-button">Update Destination</button>
             </form>
             <button onClick={handleDelete}>You Want To Delete Me???????</button>
         </div>

@@ -1,0 +1,30 @@
+label {
+    margin-left: 80px;
+    display: block;
+}
+
+button[type="submit"] {
+    margin-left: 160px;
+    display: inline-block
+}
+
+.update-location-form-container {
+    /* background-color: rgba(199, 233, 255, 0.514); */
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 340px;
+    margin: auto auto 1px auto;
+}
+
+#update-location-form-input {
+    margin-right: 400px;
+    display: inline-block;
+}
+
+#update-location-form {
+    margin-left: -88px;
+}
+
+#update-location-button {
+    margin-left: 170px;
+}

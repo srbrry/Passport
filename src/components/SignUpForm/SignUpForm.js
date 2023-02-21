@@ -1,5 +1,6 @@
 import { Component } from "react";
 import { signUp  } from "../../utilities/users-service"
+import './SignUpForm.css'
 
 export default class SignUpForm extends Component {
     //state is just a POJO
@@ -49,17 +50,24 @@ export default class SignUpForm extends Component {
        }
     }
 
+    showLoginForm
+
+    // onAnchorClick = (event) => {
+    //     event.currentTarget.classList.toggle
+    // }
+
     render() {
             //if password does not equal confirm:  FALSE
         const disable = this.state.password !== this.state.confirm
 
         return(
-            <div className="form-container">
-                <form autoComplete="off" onSubmit={this.handleSubmit}>
+            <div className="signup-container">
+                <form autoComplete="off" onSubmit={this.handleSubmit} id="sign-up-form">
                     <label>Name</label>
                     <input 
                         type="text"
                         name="name"
+                        className="sign-up-input"
                         value={this.state.name}
                         onChange={this.handleChange}
                         required
@@ -68,6 +76,7 @@ export default class SignUpForm extends Component {
                     <input 
                         type="email"
                         name="email"
+                        className="sign-up-input"
                         value={this.state.email}
                         onChange={this.handleChange}
                         required
@@ -76,6 +85,7 @@ export default class SignUpForm extends Component {
                     <input 
                         type="password"
                         name="password"
+                        className="sign-up-input"
                         value={this.state.password}
                         onChange={this.handleChange}
                         required
@@ -84,11 +94,12 @@ export default class SignUpForm extends Component {
                     <input 
                         type="password"
                         name="confirm"
+                        className="sign-up-input"
                         value={this.state.confirm}
                         onChange={this.handleChange}
                         required
                     />
-                    <button type="submit" disabled={disable}>Sign Up</button>
+                    <button type="submit" id="sign-up-button" disabled={disable}>Sign Up</button>
                 </form>
                 <p className="error-message">{this.state.error}</p>
             </div>

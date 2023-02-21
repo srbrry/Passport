@@ -1,5 +1,6 @@
 import { useState } from "react"
 import * as locationsAPI from "../../utilities/location-api"
+import './LocationForm.css'
 
 export default function LocationForm() {
 
@@ -24,24 +25,27 @@ export default function LocationForm() {
 
     return(
         <>
-        <div className="form-container">
-            <form onSubmit={handleSubmit}>
+        <div className="location-form-container">
+            <form onSubmit={handleSubmit} id="add-location-form">
                 <label>Location</label>
                 <input 
                     name = "location"
                     type = "text" 
+                    id = "location-form-input"
                     onChange = {handleChange} />
                 <label>From:</label>
                 <input 
                     name = "dateFrom"
                     type = "date"  
+                    id = "location-form-input"
                     onChange = {handleChange} />
                 <label>To:</label>
                 <input 
                     name = "dateTo"
                     type = "date"  
+                    id = "location-form-input"
                     onChange = {handleChange} />     
-                <button type="submit">Add My Destination</button>
+                <button type="submit" id="add-location-button">Add Past Trip</button>
             </form>
         </div>
         </>
