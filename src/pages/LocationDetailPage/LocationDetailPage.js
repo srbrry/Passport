@@ -15,7 +15,7 @@ export default function LocationDetailPage() {
     const [showForm, setShowForm] = useState(false)
     const [showNotes, setShowNotes] = useState(false)
 
-    const [locationData, setLocationData] = useState({})
+    const [locationData, setLocationData] = useState({ note: [] })
 
 
     useEffect(function() {
@@ -25,17 +25,25 @@ export default function LocationDetailPage() {
              setLocationData(locationApiData)
         }
        show()
-    }, [setLocationData, data.location._id])
+    }, [])
 
+    function onAddNote(newNote) {
+        let notes = [...locationData.note, newNote];
+        setLocationData({ ...locationData, note: notes });
+    }
 
+    function onUpdateNote(note) {}
+    function onDeleteNote(note) {}
+
+    console.log(locationData)
     return (
         <>
     
     <div className="main-page-passport-container">
         <div className="passport-left passport-page">
-        <h2>{data.location.location}</h2>
-        <p>{data.location.dateFrom}</p>
-        <p>{data.location.dateTo}</p>
+        <h2>{locationData.location}</h2>
+        <p>{locationData.dateFrom}</p>
+        <p>{locationData.dateTo}</p>
 
         <button onClick={() => setShowForm(!showForm)}>Update Location</button> 
          
@@ -45,7 +53,7 @@ export default function LocationDetailPage() {
 
         <div className="passport-right passport-page">
         {
-            data.location.note.map((note, index) => {
+            locationData.note.map((note, index) => {
                 return(
                     <> 
                         <NoteCard notes={note} data={data} key={index} />
@@ -55,7 +63,7 @@ export default function LocationDetailPage() {
                 )
             })
         }
-        <NoteForm />
+        <NoteForm handleAddNote={onAddNote} />
         </div>
     </div>
         </>

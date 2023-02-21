@@ -3,7 +3,7 @@ import { useLocation } from "react-router-dom"
 import * as noteAPI from "../../utilities/note-api"
 import './NoteForm.css'
 
-export default function NoteForm() {
+export default function NoteForm({ handleAddNote }) {
 
     const location = useLocation()
     const { data } = location.state
@@ -24,6 +24,7 @@ export default function NoteForm() {
         // console.log(`location is: ${location}`)
         noteAPI.createNote(note)
         // console.log(note)
+        handleAddNote(note)
     }
 
     return(
