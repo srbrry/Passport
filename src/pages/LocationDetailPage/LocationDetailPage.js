@@ -48,8 +48,8 @@ export default function LocationDetailPage() {
             data.location.note.map((note, index) => {
                 return(
                     <> 
-                        <NoteCard note={note} key={index} />
-                        <UpdateNoteForm notes={note} data={data}/>
+                        <NoteCard notes={note} data={data} key={index} />
+                        {/* <UpdateNoteForm notes={note} data={data}/> */}
                         {/* <button onClick={() => setShowNotes(!showNotes)}>Update this note</button> */}
                     </>
                 )
