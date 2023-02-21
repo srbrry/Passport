@@ -1,7 +1,8 @@
 const Location = require("../../models/locations")
 
 async function index(req, res) {
-    const locations = await Location.find({})
+    const user = req.user._id
+    const locations = await Location.find({user})
     res.json(locations)
 }
 

@@ -10,8 +10,8 @@ button[type="submit"] {
 
 .update-note-form-container {
     /* background-color: rgba(199, 233, 255, 0.514); */
-    width: 340px;
-    margin: auto;
+    width: 90%;
+    margin: 0 auto;
     margin-left: 10px;
 }
 

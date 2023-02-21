@@ -12,7 +12,8 @@ button[type="submit"] {
     /* background-color: rgba(199, 233, 255, 0.514); */
     padding-top: 20px;
     padding-bottom: 20px;
-    margin: auto;
+    margin: 0 auto;
+    width: 90%;
 }
 
 #add-note-input {

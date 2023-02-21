@@ -1,15 +1,19 @@
 import { useState } from "react"
 import UpdateNoteForm from "../updateNotesForm/updateNotesForm";
+import './NoteCard.css'
 
-export default function NoteCard({ notes, data, handleSubmit }){
+export default function NoteCard({ notes, data }){
 
     const [formToggle, setFormToggle] = useState(false)
 
     return(
         <> 
-            <h2><span onClick={() => setFormToggle(!formToggle)}>{notes.title}</span></h2>
-
-            {formToggle ? (<UpdateNoteForm handleAddNote={handleSubmit} notes={notes} data={data} />) : ""}
+            <h2 className="note-title-link">
+                <span onClick={() => setFormToggle(!formToggle)}>{notes.title}</span>
+            </h2>
+            <p>{notes.content}</p>
+            {formToggle ? (<UpdateNoteForm notes={notes} data={data} />) : ""}
+            <hr></hr>
             
         </>
     )
