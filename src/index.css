@@ -22,19 +22,22 @@
 
 body {
   margin: 0;
-  font-family: Avenir;
+  font-family: 'Avenir';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: white;
   padding: 2vmin;
   height: 100vh;
-  background-image: url("");
 }
 
 h1 {
-  font-family: Avenir;
+  font-family: 'Avenir';
   font-weight: normal;
   padding-top: 15px;
+}
+
+h2 {
+  font-family: 'Courier New';
 }
 
 a {

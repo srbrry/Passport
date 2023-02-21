@@ -1,0 +1,11 @@
+p {
+    font-family: 'Courier';
+}
+
+form {
+    font-family: 'Courier';
+}
+
+button, button[type="submit"] {
+    font-family: 'Courier';
+}

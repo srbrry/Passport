@@ -42,8 +42,8 @@ export default function LocationDetailPage() {
     <div className="main-page-passport-container">
         <div className="passport-left passport-page">
         <h2>{locationData.location}</h2>
-        <p>{locationData.dateFrom}</p>
-        <p>{locationData.dateTo}</p>
+        <p>Start Date: {locationData.dateFrom}</p>
+        <p>End Date: {locationData.dateTo}</p>
 
         <button onClick={() => setShowForm(!showForm)}>Update Location</button> 
          

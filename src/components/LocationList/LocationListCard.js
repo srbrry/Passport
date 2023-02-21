@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom"
+import "./LocationListCard.css"
 
 export default function LocationListCard({ location }){
     

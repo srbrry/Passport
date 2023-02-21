@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import LocationListCard from "./LocationListCard";
 import LocationForm from "../LocationForm/LocationForm";
 import * as locationsAPI from "../../utilities/location-api";
+import './LocationList.css'
 
 export default function Locations() {
   const [locations, setLocations] = useState([]);
