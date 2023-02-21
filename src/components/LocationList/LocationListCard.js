@@ -7,7 +7,7 @@ export default function LocationListCard({ location }){
             <h2>{location.location}</h2> 
             <p>From: {location.dateFrom}</p>
             <p>To: {location.dateTo}</p>
-            {/* <p>Notes: {location.note} </p> */}
+            <p>Notes: {location.note} </p>
         </Link> 
     )
 }
