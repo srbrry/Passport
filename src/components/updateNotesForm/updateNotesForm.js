@@ -2,7 +2,7 @@ import { useState } from "react"
 import * as notesAPI from "../../utilities/note-api"
 import './updateNotesForm.css'
 
-export default function UpdateNoteForm({ notes, data, handleAddNote }) {
+export default function UpdateNoteForm({ notes, data }) {
         //assign value of note _id
     let noteId = notes._id
     
@@ -23,7 +23,6 @@ export default function UpdateNoteForm({ notes, data, handleAddNote }) {
         event.preventDefault()
  
         notesAPI.updateNote(note, noteId)   
-        handleAddNote(note);
     }
 
     function handleDelete() {
