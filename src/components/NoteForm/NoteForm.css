@@ -10,10 +10,10 @@ button[type="submit"] {
 
 .add-note-form-container {
     /* background-color: rgba(199, 233, 255, 0.514); */
-    padding-top: 50px;
+    padding-top: 20px;
     padding-bottom: 20px;
-    margin: 0 auto;
-    width: 90%;
+    margin: auto;
+    width: 20px;
 
 }
 
@@ -27,5 +27,5 @@ button[type="submit"] {
 }
 
 #add-note-button {
-    margin-left: 50%;
+    margin-left: 170px;
 }

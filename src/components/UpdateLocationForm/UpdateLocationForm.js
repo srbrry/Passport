@@ -16,6 +16,7 @@ export default function UpdateLocationForm({ data }) {
   
     function handleChange(event) {
         setLocation({...location, [event.target.name]: event.target.value})
+        // console.log(location)
     }
 
     function handleSubmit(event) {
@@ -54,14 +55,14 @@ export default function UpdateLocationForm({ data }) {
                     id = "update-location-input"
                     value = {location.dateTo}
                     onChange={handleChange} />                   
-                <Link to="/locations" onClick={handleSubmit}>
-                    <button type="button">Update Destination</button>
-                </Link>
+        <Link to="/locations" onClick={handleSubmit}>
+  <button type="button">Update Destination</button>
+</Link>
                 </form>
 
             <Link to="/locations">
-                <button onClick={handleDelete}>Delete Trip
-                </button>
+            <button onClick={handleDelete}>Delete Trip
+            </button>
             </Link>
             </div>
 
