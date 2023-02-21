@@ -2,7 +2,7 @@ import { useState } from "react"
 import UpdateNoteForm from "../updateNotesForm/updateNotesForm";
 import './NoteCard.css'
 
-export default function NoteCard({ notes, data, handleSubmit }){
+export default function NoteCard({ notes, data }){
 
     const [formToggle, setFormToggle] = useState(false)
 
