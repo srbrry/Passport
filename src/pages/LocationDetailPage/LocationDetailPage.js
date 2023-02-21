@@ -5,6 +5,7 @@ import * as locationsAPI from "../../utilities/location-api"
 import NoteForm from "../../components/NoteForm/NoteForm"
 import NoteCard from "../../components/NoteCard/NoteCard"
 import UpdateNoteForm from "../../components/updateNotesForm/updateNotesForm"
+import './LocationDetailPage.css'
 
 export default function LocationDetailPage() {
 
@@ -29,29 +30,34 @@ export default function LocationDetailPage() {
 
     return (
         <>
+    
+    <div className="main-page-passport-container">
+        <div className="passport-left passport-page">
+        <h2>{data.location.location}</h2>
+        <p>{data.location.dateFrom}</p>
+        <p>{data.location.dateTo}</p>
 
         <button onClick={() => setShowForm(!showForm)}>Update Location</button> 
          
 
-        {showForm ? (<UpdateLocationForm data={data}/>) : " "}
-        
+         {showForm ? (<UpdateLocationForm data={data}/>) : " "}
+        </div>
 
-        <h2>{data.location.location}</h2>
-        <p>{data.location.dateFrom}</p>
-        <p>{data.location.dateTo}</p>
-        
+        <div className="passport-right passport-page">
         {
             data.location.note.map((note, index) => {
                 return(
                     <> 
-                        <NoteCard note={note} key={index} />
-                        <UpdateNoteForm notes={note} data={data}/>
+                        <NoteCard notes={note} data={data} key={index} />
+                        {/* <UpdateNoteForm notes={note} data={data}/> */}
                         {/* <button onClick={() => setShowNotes(!showNotes)}>Update this note</button> */}
                     </>
                 )
             })
         }
         <NoteForm />
+        </div>
+    </div>
         </>
     )
 }

@@ -15,17 +15,25 @@ export default function Locations() {
     getLocations();
   }, []);
 
+
   async function handleLocationAdded(addedLocation) {
     setLocations([...locations, addedLocation]);
   }
 
   return (
     <>
-      <button onClick={() => setShowForm(true)}>Add Location</button>
-      {showForm && <LocationForm onLocationAdded={handleLocationAdded} />}
-      {locations.map((location, index) => (
+    <div className="main-page-passport-container">
+      <div className="passport-left passport-page">
+        <h2>My Destinations</h2>
+        <button onClick={() => setShowForm(true)}>Add Location</button>
+        {showForm && <LocationForm onLocationAdded={handleLocationAdded} />}
+      </div>
+      <div className="passport-right passport-page">
+        {locations.map((location, index) => (
         <LocationListCard location={location} index={index} key={index} />
-      ))}
+        ))}
+      </div>    
+    </div>
     </>
   );
 }

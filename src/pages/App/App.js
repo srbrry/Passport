@@ -1,5 +1,5 @@
 import { useState } from "react"
-import { Routes, Route, Navigate } from "react-router-dom"
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom"
 import Locations from "../Locations/Locations";
 import LocationDetailPage from "../LocationDetailPage/LocationDetailPage";
 import AuthPage from "../AuthPage/AuthPage"

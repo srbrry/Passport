@@ -1,6 +1,6 @@
 import { useState } from "react"
 import * as notesAPI from "../../utilities/note-api"
-
+import './updateNotesForm.css'
 
 export default function UpdateNoteForm({ notes, data }) {
         //assign value of note _id
@@ -32,12 +32,13 @@ export default function UpdateNoteForm({ notes, data }) {
 
 
     return (
-        <div className="form-container">
-            <form onSubmit={handleSubmit}>
+        <div className="update-note-form-container">
+            <form onSubmit={handleSubmit} id="update-note-form">
                 <label>Title</label>
                 <input  
                     name = "title"
                     type = "text"
+                    id = "update-note-input"
                     value = {note.title}
                     onChange = {handleChange}
                 />
@@ -50,7 +51,7 @@ export default function UpdateNoteForm({ notes, data }) {
                     value = {note.content}
                     onChange={handleChange} 
                 />
-                <button type="submit">Update Note</button>
+                <button type="submit" id="update-note-button">Update Note</button>
             </form>
             <button onClick={handleDelete} >Delete</button>
         </div>

@@ -1,5 +1,7 @@
-import { useState } from "react";
-import * as locationsAPI from "../../utilities/location-api";
+import { useState } from "react"
+import * as locationsAPI from "../../utilities/location-api"
+import './LocationForm.css'
+
 
 export default function LocationForm({ onLocationAdded }) {
   const [location, setLocation] = useState({
@@ -19,17 +21,36 @@ export default function LocationForm({ onLocationAdded }) {
     setLocation({ location: "", dateFrom: "", dateTo: "" });
   }
 
-  return (
-    <div className="form-container">
-      <form onSubmit={handleSubmit}>
-        <label>Location</label>
-        <input name="location" type="text" onChange={handleChange} value={location.location} />
-        <label>From:</label>
-        <input name="dateFrom" type="date" onChange={handleChange} value={location.dateFrom} />
-        <label>To:</label>
-        <input name="dateTo" type="date" onChange={handleChange} value={location.dateTo} />
-        <button type="submit">Add My Destination</button>
-      </form>
-    </div>
-  );
+
+    return(
+        <>
+        <div className="location-form-container">
+            <form onSubmit={handleSubmit} id="add-location-form">
+                <label>Location</label>
+                <input 
+                    name = "location"
+                    type = "text" 
+                    id = "location-form-input"
+                    value={location.location}
+                    onChange = {handleChange} />
+                <label>From:</label>
+                <input 
+                    name = "dateFrom"
+                    type = "date"  
+                    id = "location-form-input"
+                    value={location.dateFrom}
+                    onChange = {handleChange} />
+                <label>To:</label>
+                <input 
+                    name = "dateTo"
+                    type = "date"  
+                    id = "location-form-input"
+                    value={location.dateTo}
+                    onChange = {handleChange} />     
+                <button type="submit" id="add-location-button">Add Past Trip</button>
+            </form>
+        </div>
+        </>
+    )
 }
+
