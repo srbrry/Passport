@@ -29,9 +29,8 @@ export default function LogInForm({ setUser }) {
     }
 
 return (
-    <div className="form-container">
+    <div className="login-container">
     <form autoComplete="off" onSubmit={handleSubmit}>
-        
         <label>Email</label>
         <input 
             type="email"
@@ -52,6 +51,6 @@ return (
         <button type="submit">Log In</button>
     </form>
     <p className="error-message">{error}</p>
-</div>
+    </div>
 )
 }

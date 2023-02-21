@@ -1,0 +1,29 @@
+label {
+    margin-left: 80px;
+    display: block;
+}
+
+button[type="submit"] {
+    margin-left: 160px;
+    display: inline-block
+}
+
+.update-note-form-container {
+    /* background-color: rgba(199, 233, 255, 0.514); */
+    width: 340px;
+    margin: auto;
+    margin-left: 10px;
+}
+
+#update-note-form-input {
+    margin-right: 400px;
+    display: inline-block;
+}
+
+#update-note-form {
+    margin-left: -88px;
+}
+
+#update-note-button {
+    margin-left: 170px;
+}
