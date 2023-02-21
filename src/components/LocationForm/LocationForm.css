@@ -16,7 +16,7 @@ button[type="submit"] {
     margin: auto auto 1px auto;
 }
 
-#location-form-input {
+.location-form-input {
     margin-right: 400px;
     display: inline-block;
 }

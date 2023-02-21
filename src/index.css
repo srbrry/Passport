@@ -114,7 +114,7 @@ code {
     inset -3px -1px 7px rgba(174, 174, 174, 0.329),
     inset -6px -5px 7px rgba(148, 138, 148, 0.5),
     inset 30px 0px 10px rgba(200, 200, 200, 0.2) /*inner shadow */;
-  margin: auto;
+  margin: 50px auto;
 }
 
 .main-page-passport-container {

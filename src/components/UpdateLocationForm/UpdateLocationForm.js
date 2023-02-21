@@ -28,7 +28,6 @@ export default function UpdateLocationForm({ data }) {
         locationsAPI.deleteLocation(locationId)
     }
 
-
     return (
         <div className="update-location-form-container">
             <form onSubmit={handleSubmit} id="update-location-form">

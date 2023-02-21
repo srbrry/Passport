@@ -67,11 +67,6 @@
 | Update | /travels/:id | PATCH | Update one list |
 | Delete | /travels/:id | DELETE | Delete one list |
 
-
-
-
-
-
 User Stories
 
  MVP

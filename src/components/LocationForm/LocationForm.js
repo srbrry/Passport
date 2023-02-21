@@ -31,19 +31,19 @@ export default function LocationForm() {
                 <input 
                     name = "location"
                     type = "text" 
-                    id = "location-form-input"
+                    className = "location-form-input"
                     onChange = {handleChange} />
                 <label>From:</label>
                 <input 
                     name = "dateFrom"
                     type = "date"  
-                    id = "location-form-input"
+                    className = "location-form-input"
                     onChange = {handleChange} />
                 <label>To:</label>
                 <input 
                     name = "dateTo"
                     type = "date"  
-                    id = "location-form-input"
+                    className = "location-form-input"
                     onChange = {handleChange} />     
                 <button type="submit" id="add-location-button">Add Past Trip</button>
             </form>
