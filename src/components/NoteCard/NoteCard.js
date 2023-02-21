@@ -1,7 +1,7 @@
 import { useState } from "react"
 import UpdateNoteForm from "../updateNotesForm/updateNotesForm";
 
-export default function NoteCard({ notes, data }){
+export default function NoteCard({ notes, data, handleSubmit }){
 
     const [formToggle, setFormToggle] = useState(false)
 
@@ -9,7 +9,7 @@ export default function NoteCard({ notes, data }){
         <> 
             <h2><span onClick={() => setFormToggle(!formToggle)}>{notes.title}</span></h2>
 
-            {formToggle ? (<UpdateNoteForm notes={notes} data={data} />) : ""}
+            {formToggle ? (<UpdateNoteForm handleAddNote={handleSubmit} notes={notes} data={data} />) : ""}
             
         </>
     )
