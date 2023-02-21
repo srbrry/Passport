@@ -1,40 +1,33 @@
-# ** TITLE **  PassPort
+# Passport
 
-# Wireframe
-# Login Page
-![Wireframe](assets/login.jpeg)
+## Description
 
---
+Passport is a travel diary where users can keep track of where they traveled as well as what they did there and the memories associated with that trip
 
-# Signin Signup Page
-![Wireframe](assets/SigninSignup.jpeg)
+## Login Page
+![Log In Page](assets/LogIn.png)
 
---
 
-# HomePage
-![Wireframe](assets/HomePage.jpeg)
+## Sign Up Page
+![Sign Up Page](assets/SignUp.png)
 
---
 
-# Country Info Page
-![Wireframe](assets/CountryInfo.jpeg)
+## Locations Page
+![Locations Page](assets/MyDestinations.png)
 
---
 
-# ERD
+## Destination Detail Page
+![Destination Detail](assets/DestinationDetail.png)
+
+## ERD
 ![Wireframe](assets/ERD.jpeg)
 
---
-# image 
-<img src="https://docs.google.com/presentation/d/1rvcr-buYfBZFSCqZEOmnaqw9-EmvTFUklsb2EMRC8g8/edit#slide=id.p" alt="image">
+
+[Slide Show](https://docs.google.com/presentation/d/1rvcr-buYfBZFSCqZEOmnaqw9-EmvTFUklsb2EMRC8g8/edit#slide=id.p)
 
 
----
-# ** Description ** 
 
-???
-
-# ** Technologies I used ** 
+# Technologies Used
 
 1. Javascript
 
@@ -58,39 +51,29 @@
 
 11. Node
 
-# ** Rouets I used ** 
+12. React
+
+#  Routes 
 | Name | Path | Http Verb | Purpose |
 | --- | --- | --- | --- |
-| Index | /travels | GET | Display all lists |
-| Show | /travels/:id | GET | Display one list |
-| Create | /travels | POST | Create one list |
-| Update | /travels/:id | PATCH | Update one list |
-| Delete | /travels/:id | DELETE | Delete one list |
+| Index | /api/locations | GET | Get all locations |
+| Show | /api/locations/:id | GET | Get one location |
+| Create | /api/locations | POST | Create one location |
+| Update | /api/locations/:id | PATCH | Update one location |
+| Delete | /api/locations/:id | DELETE | Delete one loation |
+| Create | /api/notes | POST | Create one note |
+| Update | /api/notes/:id | PATCH | Update one note |
+| Delete | /api/notes/:id | DELETE | Delete one note |
+| Sing Up | /api/users | POST | Create a user and token |
+| Log In | /api/users/login | POST | Log in and create token |
 
-
-
-
-
-
-User Stories
-
- MVP
-  1. AAU, I want to add places I have travelled to. 
-  2. AAU, I want to log in, sign in and log out. 
-  3. AUU, I want to add places I want to travel to. 
-  4. AAU, I want to add notes to places I have been to.
-  5. AAU, I want to see a list of all the places I have been to. 
-  6. AAU, I want to see an interactive map of places I have been to. 
-  7. AAU, I want to see the location of the pictures. 
-  8. AAU, I want to CRUD on all locations and notes. 
-  9. AAU, I want to rate places I have been using stars.
-  10. AAU, I want to have a login/Signin Page, Landing Page, and a place detail page. 
-  11. AAU, I want to have a name, a title and a description of the location.   
-
-  Version 2
-  1. AAU, I want to see the weather of the location. 
-
-
-
-
-
+## User Stories
+- Version 2
+    - AAU, I want to be able to add a wishlist
+    - AAU, I want to be able to update the wishlist
+    - AAU, I want to be able to delete from the wishlist
+    - AAU, I want to be able to move locations from the wishlist to the locations list    
+- Version 3
+    - AAU, I want to see an interactive map of places I have been to
+    - AAU, I want to be able to rate my locations 
+    - AAU, I want to see my locations based on the rattings
