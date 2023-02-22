@@ -28,28 +28,23 @@ export default class SignUpForm extends Component {
        try {    
         //taking the state and making a copy of the state and assigning it to formData variable
         //delete the error and confirm so that it doesnt get sent to back end
-        const formData = {...this.state}
-        delete formData.error
-        delete formData.confirm
-            //logs user name, email, password
-        console.log(formData)
+            const formData = {...this.state}
+            delete formData.error
+            delete formData.confirm
 
         //wait for a response back from the server
         const user = await signUp(formData)
-        //logs the all user info
-        //console.log(user)
         //get user when signed up
         this.props.setUser(user)
 
        } catch(error) {
        //if it doesnt work, error handle
-       console.error(error)
-       this.setState({
-        error: "Sign up failed - Try again later"
-       })
+            console.error(error)
+            this.setState({
+                error: "Sign up failed - Try again later"
+            })
        }
     }
-
     showLoginForm
 
     // onAnchorClick = (event) => {

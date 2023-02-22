@@ -14,13 +14,9 @@ function createJWT(user) {
 
 async function create(req, res) {
     try {
-        console.log(req.body)
         const user = await User.create(req.body)
-        console.log(user + "created user")
         const token = createJWT(user)
-
         res.json(token)
-
     } catch (error) {
         res.status(400).json(error)
     }
@@ -46,7 +42,6 @@ async function logIn(req, res) {
 }
 
 function checkToken(req, res) {
-    console.log("req.user", req.user)
     res.json(req.exp)
 }
     

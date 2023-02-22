@@ -48,7 +48,6 @@ return (
             onChange={handleChange}
             required
         />
-       
         <button id="login-button" type="submit">Log In</button>
     </form>
     <p className="error-message">{error}</p>

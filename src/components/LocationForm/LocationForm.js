@@ -2,7 +2,6 @@ import { useState } from "react"
 import * as locationsAPI from "../../utilities/location-api"
 import './LocationForm.css'
 
-
 export default function LocationForm({ onLocationAdded }) {
   const [location, setLocation] = useState({
     location: "",
@@ -20,7 +19,6 @@ export default function LocationForm({ onLocationAdded }) {
     onLocationAdded(addedLocation);
     setLocation({ location: "", dateFrom: "", dateTo: "" });
   }
-
 
     return(
         <>
@@ -53,4 +51,3 @@ export default function LocationForm({ onLocationAdded }) {
         </>
     )
 }
-

@@ -15,14 +15,11 @@ export default function UpdateLocationForm({ data }) {
   
     function handleChange(event) {
         setLocation({...location, [event.target.name]: event.target.value})
-        // console.log(location)
     }
 
     function handleSubmit(event) {
         event.preventDefault()
-
         locationsAPI.updateLocation(location, locationId)
-       
     }
 
     function handleDelete() {
@@ -53,15 +50,14 @@ export default function UpdateLocationForm({ data }) {
                     className = "update-location-input"
                     value = {location.dateTo}
                     onChange={handleChange} />                
-        <Link to="/locations" onClick={handleSubmit}>
-            <button type="button" id="update-location-button">Update Destination</button>
-        </Link>
-                </form>
+                <Link to="/locations" onClick={handleSubmit}>
+                    <button type="button" id="update-location-button">Update Destination</button>
+                </Link>
+            </form>
             <Link to="/locations">
             <button onClick={handleDelete}>Delete Trip
             </button>
             </Link>
-            </div>
-
+        </div>
     )
 }

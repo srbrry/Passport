@@ -18,8 +18,6 @@ async function show(req, res) {
 
 async function create(req, res) {
     try{
-        console.log(req)
-        console.log(req.user)
         req.body.user = req.user._id
         const location = await Location.create(req.body)
         res.json(location)
@@ -44,7 +42,6 @@ async function updateLocation(req, res) {
 
 async function deleteLocation(req, res) {
     try{
-        console.log(req.params.id)
         const location = await Location.findById(req.params.id)
         location.deleteOne()
 
@@ -53,7 +50,6 @@ async function deleteLocation(req, res) {
         res.status(400).json(error)
     }
 }
-
 
 
 module.exports = {
