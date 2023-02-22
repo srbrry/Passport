@@ -101,7 +101,7 @@ code {
 }
 
 .auth-page-passport-shape {
-  background-color: #bfdefbc7;
+  background-color: #bfdefbab;
   width: 432px;
   height: 610px;
   -moz-border-radius: 0px 20px 18px 0px;
@@ -144,14 +144,14 @@ code {
     #dbdbdb 50%,
     #b5b5b5
   );
-  background-color: #bfdefbc7;
+  background-color: #bfdefbc0;
 }
 
 .passport-left {
-  display: grid;
+  /* display: grid; */
   justify-content: center;
   overflow: auto;
-  background-color: #bfdefbc7;
+  background-color: #bfdefb84;
   /* border: 10px solid red; */
   margin-left:20px;
   -moz-border-radius:20px 0px 0px  18px;
@@ -177,7 +177,7 @@ code {
 }
 
 .passport-right {
-  display: grid;
+  /* display: grid; */
   justify-content: center;
   overflow: auto;
     /*background: -webkit-gradient(
@@ -219,7 +219,7 @@ code {
 
 .login-container {
   padding: 3vmin;
-  background-color: var(--light-blue);
+  background-color: #7490ab72;
   border: 0.1vmin dotted var(--dark-grey);
   border-radius: 1vmin;
   width: 390px;
@@ -229,6 +229,11 @@ code {
 p.error-message {
   color: blue;
   text-align: center;
+}
+
+textarea {
+  border-radius: 18px;
+  border: 1px solid white;
 }
 
 form {

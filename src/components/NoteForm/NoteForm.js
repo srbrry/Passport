@@ -35,14 +35,15 @@ export default function NoteForm({ handleAddNote }) {
                 <input 
                     name = "title"
                     type = "text"  
-                    input = "add-note-input"
+                    id = "note-title-input"
                     onChange = {handleChange} />
                 <label>Note Content:</label>
-                <input 
+                <textarea
                     name = "content"
                     type = "text"
-                    input = "add-note-input"
-                    onChange = {handleChange} />     
+                    id = "note-content-input"
+                    onChange = {handleChange}
+                />    
                 <button type="submit" id="add-note-button">Add Note</button>
             </form>
         </div>

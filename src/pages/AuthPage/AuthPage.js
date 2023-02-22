@@ -15,7 +15,7 @@ export default function AuthPage({ setUser }) {
         <>
           <LogInForm setUser={setUser} />
           <p>
-          Need to make an account? Click {" "}
+          Need to make an account? <br></br>Sign up {" "}
           <span className="login-anchor" onClick={() => setShowForm(!showForm)}>
             <a href="#">here</a>
           </span>
@@ -25,9 +25,9 @@ export default function AuthPage({ setUser }) {
         <>
           <SignUpForm setUser={setUser} />
           <p>
-          Already have an account? Login {" "}
+          Already have an account? {" "}
           <span className="login-anchor" onClick={() => setShowForm(!showForm)}>
-            <a href="#">here</a>
+            <a href="#">Login</a>
           </span>
         </p>
         </>

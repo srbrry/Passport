@@ -26,7 +26,7 @@ export default function Locations() {
     <div className="main-page-passport-container">
       <div className="passport-left passport-page">
         <h2>My Destinations</h2>
-        <button onClick={() => setShowForm(true)}>Add Location</button>
+        <button id ="add-location-button-2" onClick={() => setShowForm(true)}>Add Location</button>
         {showForm && <LocationForm onLocationAdded={handleLocationAdded} />}
       </div>
       <div className="passport-right passport-page">

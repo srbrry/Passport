@@ -12,8 +12,19 @@ button[type="submit"] {
     /* background-color: rgba(199, 233, 255, 0.514); */
     padding-top: 20px;
     padding-bottom: 20px;
-    margin: 0 auto;
+    margin: -18px auto 5px auto;
     width: 90%;
+}
+
+#note-title-input {
+    width: 250px;
+}
+
+#note-content-input {
+    margin-left: -80px;
+    width: 250px;
+    height: 120px;
+    /* border */
 }
 
 #add-note-input {
@@ -22,9 +33,11 @@ button[type="submit"] {
 }
 
 #add-note-form {
-    margin-left: -88px;
+    margin-left: -5px;
 }
 
 #add-note-button {
-    margin-left: 170px;
+    left: -60px;
+    position: relative;
+    margin-top: 5px;
 }

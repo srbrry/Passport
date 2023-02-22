@@ -38,7 +38,7 @@ export default function UpdateNoteForm({ notes, data }) {
                 <input  
                     name = "title"
                     type = "text"
-                    id = "update-note-input"
+                    id = "note-title"
                     value = {note.title}
                     onChange = {handleChange}
                 />
@@ -47,13 +47,14 @@ export default function UpdateNoteForm({ notes, data }) {
                     rows="5"
                     cols="30"
                     name = "content"
+                    id = "note-content"
                     type = "text"
                     value = {note.content}
                     onChange={handleChange} 
                 />
                 <button type="submit" id="update-note-button">Update Note</button>
             </form>
-            <button onClick={handleDelete} >Delete</button>
+            <button id="delete-note-button" onClick={handleDelete} >Delete Note</button>
         </div>
     )
 }
