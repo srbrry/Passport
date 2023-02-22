@@ -14,7 +14,6 @@ export default function NoteCard({ notes, data }){
             <p>{notes.content}</p>
             {formToggle ? (<UpdateNoteForm notes={notes} data={data} />) : ""}
             <hr></hr>
-            
         </>
     )
 }

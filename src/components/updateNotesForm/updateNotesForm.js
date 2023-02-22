@@ -12,22 +12,18 @@ export default function UpdateNoteForm({ notes, data }) {
         noteId: noteId,
         locationId: data.location._id
     })
-    
 
     function handleChange(event) {
         setNote({...note, [event.target.name]: event.target.value})
     }
 
-
     function handleSubmit(event) {
         event.preventDefault()
- 
         notesAPI.updateNote(note, noteId)   
     }
 
     function handleDelete() {
         notesAPI.deleteNote(note, noteId)
-        alert('deleted note')
     }
 
 

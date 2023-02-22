@@ -16,14 +16,11 @@ export default function NoteForm({ handleAddNote }) {
 
     function handleChange(event) {
         setNote({...note, [event.target.name]: event.target.value})
-        // console.log(note)
     }
 
     function handleSubmit(event) {
         event.preventDefault()
-        // console.log(`location is: ${location}`)
         noteAPI.createNote(note)
-        // console.log(note)
         handleAddNote(note)
     }
 
