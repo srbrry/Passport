@@ -1,10 +1,10 @@
-//to run express server in terminial:  nodemon server
+//to run express server in terminal:  nodemon server
     //server side
         //runs port 3001
 //to run React dev server in terminal:  npm start
     //client side
         //runs port 3000
-
+const cors = require('cors')
 const express = require("express")
 const path = require("path")
 const favicon = require("serve-favicon")
@@ -24,10 +24,11 @@ const PORT = process.env.PORT || 3001
 
 app.use(logger("dev"))
 app.use(express.json())
+app.use(cors({ origin: process.env.CLIENT_ORIGIN || `http://localhost:3000` }))
 
     // Configure both serve-favicon & static middleware
     // to serve from the production 'build' folder
-app.use(favicon(path.join(__dirname, "build", "favicon.ico")))
+// app.use(favicon(path.join(__dirname, "build", "favicon.ico")))
     //telling express app to use this directory for the static assets
 app.use(express.static(path.join(__dirname, "build")))
 
@@ -41,9 +42,9 @@ app.use("/api/notes", require("./routes/api/notes"))
 
     // The following "catch all" route (note the *) is necessary
     // to return the index.html on all non-AJAX requests
-app.get("/*", function(req,res) {
-    res.sendFile(path.join(__dirname, "build", "index.html"))
-})
+// app.get("/*", function(req,res) {
+//     res.sendFile(path.join(__dirname, "build", "index.html"))
+// })
 
 
 app.listen(PORT, function() {
