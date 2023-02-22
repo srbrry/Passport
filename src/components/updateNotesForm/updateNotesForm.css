@@ -21,9 +21,27 @@ button[type="submit"] {
 }
 
 #update-note-form {
-    margin-left: -88px;
+    margin-left: 20px;
 }
 
 #update-note-button {
-    margin-left: 170px;
+    position: relative;
+    left: -83px;
+    margin-top: 10px;
+}
+
+#delete-note-button {
+    position: relative;
+    left: 11px;
+    bottom: 1px;
+    margin-bottom: 25px;
+}
+
+#note-title {
+    width: 220px;
+}
+
+#note-content {
+    margin-left: -80px;
+    width: 220px;
 }

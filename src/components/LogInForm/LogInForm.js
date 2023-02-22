@@ -1,5 +1,6 @@
 import { useState } from "react"
 import { logIn } from "../../utilities/users-service"
+import './LogInForm.css'
 
 export default function LogInForm({ setUser }) {
 
@@ -48,7 +49,7 @@ return (
             required
         />
        
-        <button type="submit">Log In</button>
+        <button id="login-button" type="submit">Log In</button>
     </form>
     <p className="error-message">{error}</p>
     </div>

@@ -22,19 +22,22 @@
 
 body {
   margin: 0;
-  font-family: Avenir;
+  font-family: 'Avenir';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: white;
   padding: 2vmin;
   height: 100vh;
-  background-image: url("");
 }
 
 h1 {
-  font-family: Avenir;
+  font-family: 'Avenir';
   font-weight: normal;
   padding-top: 15px;
+}
+
+h2 {
+  font-family: 'Courier New';
 }
 
 a {
@@ -98,7 +101,7 @@ code {
 }
 
 .auth-page-passport-shape {
-  background-color: #bfdefbc7;
+  background-color: #bfdefbab;
   width: 432px;
   height: 610px;
   -moz-border-radius: 0px 20px 18px 0px;
@@ -114,7 +117,7 @@ code {
     inset -3px -1px 7px rgba(174, 174, 174, 0.329),
     inset -6px -5px 7px rgba(148, 138, 148, 0.5),
     inset 30px 0px 10px rgba(200, 200, 200, 0.2) /*inner shadow */;
-  margin: auto;
+  margin: 50px auto;
 }
 
 .main-page-passport-container {
@@ -141,14 +144,14 @@ code {
     #dbdbdb 50%,
     #b5b5b5
   );
-  background-color: #bfdefbc7;
+  background-color: #bfdefbc0;
 }
 
 .passport-left {
-  display: grid;
+  /* display: grid; */
   justify-content: center;
   overflow: auto;
-  background-color: #bfdefbc7;
+  background-color: #bfdefb84;
   /* border: 10px solid red; */
   margin-left:20px;
   -moz-border-radius:20px 0px 0px  18px;
@@ -174,7 +177,7 @@ code {
 }
 
 .passport-right {
-  display: grid;
+  /* display: grid; */
   justify-content: center;
   overflow: auto;
     /*background: -webkit-gradient(
@@ -216,7 +219,7 @@ code {
 
 .login-container {
   padding: 3vmin;
-  background-color: var(--light-blue);
+  background-color: #7490ab72;
   border: 0.1vmin dotted var(--dark-grey);
   border-radius: 1vmin;
   width: 390px;
@@ -226,6 +229,12 @@ code {
 p.error-message {
   color: blue;
   text-align: center;
+}
+
+textarea {
+  border-radius: 18px;
+  border: 1px solid white;
+  padding: 10px;
 }
 
 form {

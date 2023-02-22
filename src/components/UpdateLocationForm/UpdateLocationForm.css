@@ -1,11 +1,6 @@
 label {
-    margin-left: 80px;
+    margin-left: 90px;
     display: block;
-}
-
-button[type="submit"] {
-    margin-left: 160px;
-    display: inline-block
 }
 
 .update-location-form-container {
@@ -13,18 +8,21 @@ button[type="submit"] {
     padding-top: 20px;
     padding-bottom: 20px;
     width: 340px;
-    margin: auto auto 1px auto;
+    margin: -18px auto 1px auto;
+    justify-content: center;
 }
 
-#update-location-form-input {
-    margin-right: 400px;
+.update-location-input {
+    margin-right: 4px;
     display: inline-block;
 }
 
 #update-location-form {
-    margin-left: -88px;
+    margin-left: 80px;
+    justify-content: center;
 }
 
 #update-location-button {
-    margin-left: 170px;
+    position: relative;
+    left: 85px;
 }

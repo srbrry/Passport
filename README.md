@@ -20,11 +20,10 @@ Passport is a travel diary where users can keep track of where they traveled as 
 ![Destination Detail](assets/DestinationDetail.png)
 
 ## ERD
-![Wireframe](assets/ERD.jpeg)
+![ERD](assets/ERD.jpeg)
 
 
 [Slide Show](https://docs.google.com/presentation/d/1rvcr-buYfBZFSCqZEOmnaqw9-EmvTFUklsb2EMRC8g8/edit#slide=id.p)
-
 
 
 # Technologies Used

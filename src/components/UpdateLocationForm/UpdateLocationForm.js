@@ -3,7 +3,6 @@ import * as locationsAPI from "../../utilities/location-api"
 import { Link } from 'react-router-dom';
 import './UpdateLocationForm.css'
 
-
 export default function UpdateLocationForm({ data }) {
         //assign value of location _id
     const locationId = `${data.location._id}`
@@ -30,36 +29,34 @@ export default function UpdateLocationForm({ data }) {
         locationsAPI.deleteLocation(locationId)
     }
 
-
     return (
         <div className="update-location-form-container">
             <form onSubmit={handleSubmit} id="update-location-form">
-                <label>Location</label>
+                <label>Location:</label>
                 <input  
                     name = "location"
                     type = "text"
-                    id = "update-location-input"
+                    className= "update-location-input"
                     value = {location.location}
                     onChange = {handleChange} />
                 <label>From:</label>
                 <input  
                     name = "dateFrom"
                     type = "date"
-                    id = "update-location-input"
+                    className = "update-location-input"
                     value = {location.dateFrom}
                     onChange={handleChange} />
                 <label>To:</label>
                 <input 
                     name = "dateTo"
                     type = "date"
-                    id = "update-location-input"
+                    className = "update-location-input"
                     value = {location.dateTo}
-                    onChange={handleChange} />                   
+                    onChange={handleChange} />                
         <Link to="/locations" onClick={handleSubmit}>
-  <button type="button">Update Destination</button>
-</Link>
+            <button type="button" id="update-location-button">Update Destination</button>
+        </Link>
                 </form>
-
             <Link to="/locations">
             <button onClick={handleDelete}>Delete Trip
             </button>

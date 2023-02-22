@@ -26,25 +26,25 @@ export default function LocationForm({ onLocationAdded }) {
         <>
         <div className="location-form-container">
             <form onSubmit={handleSubmit} id="add-location-form">
-                <label>Location</label>
+                <label className="add-location-label">Location:</label>
                 <input 
                     name = "location"
                     type = "text" 
-                    id = "location-form-input"
+                    className = "location-form-input"
                     value={location.location}
                     onChange = {handleChange} />
-                <label>From:</label>
+                <label className="add-location-label">From:</label>
                 <input 
                     name = "dateFrom"
                     type = "date"  
-                    id = "location-form-input"
+                    className = "location-form-input"
                     value={location.dateFrom}
                     onChange = {handleChange} />
-                <label>To:</label>
+                <label className="add-location-label">To:</label>
                 <input 
                     name = "dateTo"
                     type = "date"  
-                    id = "location-form-input"
+                    className = "location-form-input"
                     value={location.dateTo}
                     onChange = {handleChange} />     
                 <button type="submit" id="add-location-button">Add Past Trip</button>
