@@ -1,3 +1,4 @@
+import React from "react"
 import { useState } from "react"
 import * as locationsAPI from "../../utilities/location-api"
 import './LocationForm.css'

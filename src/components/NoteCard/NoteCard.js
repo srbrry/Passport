@@ -1,3 +1,4 @@
+import React from "react"
 import { useState } from "react"
 import UpdateNoteForm from "../updateNotesForm/updateNotesForm";
 import './NoteCard.css'

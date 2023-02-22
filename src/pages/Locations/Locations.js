@@ -1,3 +1,4 @@
+import React from "react"
 import LocationList from "../../components/LocationList/LocationList";
 import './Locations.css'
 

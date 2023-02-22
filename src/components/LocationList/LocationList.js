@@ -1,3 +1,4 @@
+import React from "react"
 import { useState, useEffect } from "react";
 import LocationListCard from "./LocationListCard";
 import LocationForm from "../LocationForm/LocationForm";
