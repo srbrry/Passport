@@ -21,7 +21,9 @@ export default function NoteForm({ handleAddNote }) {
 
     function handleSubmit(event) {
         event.preventDefault()
+            //fetch call to POST new note
         noteAPI.createNote(note)
+            //function passed down from LocationDetailPage that causes a render
         handleAddNote(note)
     }
 

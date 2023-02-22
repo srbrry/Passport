@@ -2,7 +2,7 @@
 
 ## Description
 
-Passport is a travel diary where users can keep track of where they traveled as well as what they did there and the memories associated with that trip
+Passport is a travel diary where users can keep track of where they traveled as well as what they did there and the memories associated with that trip.
 
 ## Login Page
 ![Log In Page](assets/LogIn.png)
@@ -59,7 +59,7 @@ Passport is a travel diary where users can keep track of where they traveled as 
 | Show | /api/locations/:id | GET | Get one location |
 | Create | /api/locations | POST | Create one location |
 | Update | /api/locations/:id | PATCH | Update one location |
-| Delete | /api/locations/:id | DELETE | Delete one loation |
+| Delete | /api/locations/:id | DELETE | Delete one location |
 | Create | /api/notes | POST | Create one note |
 | Update | /api/notes/:id | PATCH | Update one note |
 | Delete | /api/notes/:id | DELETE | Delete one note |
@@ -68,11 +68,11 @@ Passport is a travel diary where users can keep track of where they traveled as 
 
 ## User Stories
 - Version 2
-    - AAU, I want to be able to add a wishlist
-    - AAU, I want to be able to update the wishlist
-    - AAU, I want to be able to delete from the wishlist
-    - AAU, I want to be able to move locations from the wishlist to the locations list    
+    - AAU, I want to be able to add a wishlist.
+    - AAU, I want to be able to update the wishlist.
+    - AAU, I want to be able to delete from the wishlist.
+    - AAU, I want to be able to move locations from the wishlist. to the locations list.
 - Version 3
-    - AAU, I want to see an interactive map of places I have been to
-    - AAU, I want to be able to rate my locations 
-    - AAU, I want to see my locations based on the rattings
+    - AAU, I want to see an interactive map of places I have been to.
+    - AAU, I want to be able to rate my locations .
+    - AAU, I want to see my locations based on the ratings.

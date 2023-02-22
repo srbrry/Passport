@@ -15,6 +15,8 @@ export default function LocationDetailPage() {
     const [showForm, setShowForm] = useState(false)
     const [locationData, setLocationData] = useState({ note: [] })
 
+        //fetch the specified location via location Id
+        //render the information when page loads
     useEffect(function() {
         async function show() {
              const locationApiData = await locationsAPI.showLocation(data.location._id)
@@ -23,6 +25,7 @@ export default function LocationDetailPage() {
        show()
     }, [])
 
+        //add the new note to and set it causing a render
     function onAddNote(newNote) {
         let notes = [...locationData.note, newNote];
         setLocationData({ ...locationData, note: notes });

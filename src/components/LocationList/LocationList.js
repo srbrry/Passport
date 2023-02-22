@@ -9,6 +9,8 @@ export default function Locations() {
   const [locations, setLocations] = useState([]);
   const [showForm, setShowForm] = useState(false); // add a state variable to track whether to show the form
 
+    //on page render  fetch locations 
+    //set the fetched locations to an array of objects
   useEffect(function () {
     async function getLocations() {
       const locations = await locationsAPI.getLocation();
@@ -17,7 +19,7 @@ export default function Locations() {
     getLocations();
   }, []);
 
-
+    //when location is added, set location with the added new location 
   async function handleLocationAdded(addedLocation) {
     setLocations([...locations, addedLocation]);
   }
