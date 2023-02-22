@@ -1,0 +1,16 @@
+nav {
+    background-color: rgba(0, 0, 0, 0.915);
+    color: white;
+    width: 450px;
+    height: 40px;
+    padding-top: 8px;
+    border: 2px solid rgba(167, 204, 222, 0.908);
+    font-weight: bold;
+    border-radius: 15px;
+    margin: auto;
+    font-family: 'Courier';
+}
+
+.nav-link {
+    color: rgb(205, 236, 255);
+}
