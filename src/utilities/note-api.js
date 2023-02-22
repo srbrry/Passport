@@ -1,6 +1,6 @@
 import sendRequest from "./send-request"
 
-const NOTE_URL = "/api/notes"
+const NOTE_URL = "https://passport-k5zh.onrender.com/api/notes"
 
 //POST Note
 export function createNote(note) {

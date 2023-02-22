@@ -1,6 +1,6 @@
 import sendRequest from "./send-request"
 
-const BASE_URL = "/api/locations"
+const BASE_URL = "https://passport-k5zh.onrender.com/api/locations"
 
     //GET locations
 export function getLocation() {
